@@ -2,6 +2,9 @@
 import axios from "axios";
 export default {
   // Gets all books
+  searchBooks: function() {
+    return axios.get("/api/google", { params: { q: query } });
+  },
   getBooks: function() {
     return axios.get("/api/books");
   },
